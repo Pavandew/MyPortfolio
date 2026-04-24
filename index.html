@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pavan Dewangan — Android Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- ════ NAV ════ -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">PD</div>
+        Pavan Dewangan
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" class="nav-resume" download="PavanDewangan_Resume.pdf">Resume</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="resume.pdf" download="PavanDewangan_Resume.pdf" onclick="closeMenu()">Resume ↓</a>
+</div>
+
+<!-- ════ HERO ════ -->
+<section id="home">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <div class="hero-tag">
+          <span class="dot"></span>
+          Available for full-time opportunities
+        </div>
+        <h1 class="hero-name">Hi, I'm <span>Pavan Dewangan</span></h1>
+        <div class="hero-typing">
+          <span id="typed" class="typed-text"></span>
+          <span class="cursor-blink"></span>
+        </div>
+        <p class="hero-bio">
+          Android Developer with hands-on fintech experience building scalable,
+          user-centric mobile apps using Kotlin, Java, and Jetpack Compose.
+          Currently interning at <strong style="color:var(--accent2)">HARMAN International</strong>,
+          Bengaluru. Passionate about clean architecture, great UX, and impactful code.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat">
+            <div class="hstat-num">1+</div>
+            <div class="hstat-label">Years Exp.</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-num">10+</div>
+            <div class="hstat-label">Projects</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-num">2K+</div>
+            <div class="hstat-label">Users</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-num">12+</div>
+            <div class="hstat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap reveal">
+        <div class="hero-photo-card">
+          <!-- Replace this block with <img src="your-photo.jpg" alt="Pavan Dewangan"> -->
+          <div class="avatar-placeholder">
+            <div class="avatar-initials">PD</div>
+            <div class="avatar-name">Pavan Dewangan</div>
+            <div class="avatar-role">Android Developer</div>
+          </div>
+        </div>
+        <div class="photo-badge bottom-left">
+          <span class="badge-dot"></span>
+          <span style="font-size:12px;color:var(--text)">Open to work</span>
+        </div>
+        <div class="photo-badge top-right">
+          <span style="font-size:16px">🤖</span>
+          <span style="font-size:12px;color:var(--text)">Android Dev</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ ABOUT ════ -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-tag">About Me</div>
+      <h2 class="sec-title">My Journey</h2>
+      <p class="sec-sub">From Computer Science graduate to fintech Android developer</p>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-text">
+          <h3>Who I Am</h3>
+          <p>I'm an <strong>Android Developer</strong> based in Bengaluru, India, with hands-on experience in the fintech domain. I'm passionate about crafting robust, user-focused mobile applications that solve real-world problems.</p>
+          <p>During my internship at <strong>Rupenet Payments</strong>, I delivered end-to-end Android modules such as recharge workflows, certificate generation, and financial dashboards — leveraging Java, Kotlin, Jetpack Compose, and modern API integrations.</p>
+          <p>I thrive at the intersection of <strong>clean architecture</strong> and intuitive UI/UX, with a strong command of MVVM/MVI, RESTful APIs, and scalable app design. I'm currently seeking full-time Android Developer opportunities.</p>
+        </div>
+        <div class="about-stats">
+          <div class="astat"><div class="astat-num">2+</div><div class="astat-label">Years Experience</div></div>
+          <div class="astat"><div class="astat-num">4+</div><div class="astat-label">Projects Shipped</div></div>
+          <div class="astat"><div class="astat-num">2K+</div><div class="astat-label">Users Impacted</div></div>
+          <div class="astat"><div class="astat-num">1</div><div class="astat-label">Certification</div></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3 style="font-size:22px;font-weight:600;margin-bottom:20px">Education & Certification</h3>
+
+        <div class="edu-card">
+          <span class="edu-year">Sep 2021 — Apr 2024</span>
+          <div class="edu-title">B.Sc Computer Science</div>
+          <div class="edu-desc">Hemchand Yadav Vishwavidyalaya, Durg, Chhattisgarh</div>
+          <div class="edu-tags">
+            <span class="etag">DSA</span><span class="etag">OOP</span><span class="etag">DBMS</span>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-year">2020 — 2021</span>
+          <div class="edu-title">Higher Secondary (12th)</div>
+          <div class="edu-desc">Indian Public H.S. School — Mathematics</div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-year">August 2024</span>
+          <div class="edu-title">SDE Certification</div>
+          <div class="edu-desc">Software Development Engineer — Java, DSA &amp; DBMS fundamentals</div>
+          <div class="edu-tags">
+            <span class="etag">Java</span><span class="etag">DSA</span><span class="etag">OOP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ SKILLS ════ -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Expertise</div>
+      <h2 class="sec-title">Skills & Technologies</h2>
+      <p class="sec-sub">Technologies and tools I use to bring ideas to life</p>
+    </div>
+    <div class="skills-cats">
+      <div class="reveal">
+        <div class="skill-cat-title">Languages &amp; Core</div>
+        <div class="skills-grid">
+          <div class="skill-chip"><strong>Kotlin</strong><span>Primary</span></div>
+          <div class="skill-chip"><strong>Java</strong><span>Strong</span></div>
+          <div class="skill-chip"><strong>XML</strong><span>Layouts</span></div>
+          <div class="skill-chip"><strong>JSON</strong><span>Data format</span></div>
+          <div class="skill-chip"><strong>DSA &amp; OOP</strong><span>Fundamentals</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skill-cat-title">Android Frameworks &amp; Libraries</div>
+        <div class="skills-grid">
+          <div class="skill-chip"><strong>Jetpack Compose</strong><span>Modern UI</span></div>
+          <div class="skill-chip"><strong>Room DB</strong><span>Local storage</span></div>
+          <div class="skill-chip"><strong>Retrofit</strong><span>HTTP client</span></div>
+          <div class="skill-chip"><strong>OkHttp</strong><span>Networking</span></div>
+          <div class="skill-chip"><strong>Coil</strong><span>Image loading</span></div>
+          <div class="skill-chip"><strong>Hilt / Dagger</strong><span>DI</span></div>
+          <div class="skill-chip"><strong>Coroutines / Flow</strong><span>Async</span></div>
+          <div class="skill-chip"><strong>Firebase</strong><span>Backend / Auth</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skill-cat-title">Architecture &amp; Tools</div>
+        <div class="skills-grid">
+          <div class="skill-chip"><strong>MVVM / MVI</strong><span>Architecture</span></div>
+          <div class="skill-chip"><strong>Git &amp; GitHub</strong><span>Version control</span></div>
+          <div class="skill-chip"><strong>JUnit</strong><span>Unit testing</span></div>
+          <div class="skill-chip"><strong>Postman</strong><span>API testing</span></div>
+          <div class="skill-chip"><strong>Android Studio</strong><span>IDE</span></div>
+          <div class="skill-chip"><strong>Material Design</strong><span>UI guidelines</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ EXPERIENCE ════ -->
+<section id="experience">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Work History</div>
+      <h2 class="sec-title">Experience</h2>
+      <p class="sec-sub">My professional journey in software development</p>
+    </div>
+    <div class="timeline reveal">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-meta">Feb 2026 — Present · Bengaluru, India</span>
+          <div class="tl-company">HARMAN International</div>
+          <div class="tl-role">Android Developer Intern</div>
+          <ul class="tl-bullets">
+            <li>Developed and modified Android UI screens using XML layouts, ensuring responsive and consistent design across all device sizes.</li>
+            <li>Worked in a remote Linux server environment using MobaXterm to access project builds and development resources.</li>
+            <li>Wrote and executed unit test cases using JUnit to validate application functionality and prevent regressions.</li>
+            <li>Collaborated with cross-functional team members to debug UI issues and maintain clean, modular Android code.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Kotlin</span><span class="tag">XML</span>
+            <span class="tag">JUnit</span><span class="tag">Linux</span><span class="tag">MobaXterm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-meta">Jan 2025 — Jul 2025 · Bengaluru, India</span>
+          <div class="tl-company">Rupenet Payments</div>
+          <div class="tl-role">Android Developer Intern — Fintech</div>
+          <ul class="tl-bullets">
+            <li>Built scalable fintech modules (Recharge, Certificate Generation, Supply Chain Finance) for a live B2B platform, focusing on reliability and modular architecture.</li>
+            <li>Developed secure API integrations using Retrofit &amp; OkHttp with custom error handling and retry logic.</li>
+            <li>Built dynamic prepaid/postpaid operator listing using ViewModel + RecyclerView, <strong style="color:var(--accent2)">reducing API failures by 25%</strong>.</li>
+            <li>Designed responsive UI workflows that <strong style="color:var(--accent2)">accelerated vendor onboarding by 40%</strong>.</li>
+            <li>Integrated Firebase for real-time push notifications and analytics tracking across 2,000+ active users.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span>
+            <span class="tag">Retrofit</span><span class="tag">OkHttp</span><span class="tag">Firebase</span><span class="tag">MVVM</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ PROJECTS ════ -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Portfolio</div>
+      <h2 class="sec-title">Featured Projects</h2>
+      <p class="sec-sub">A selection of projects I've worked on recently</p>
+    </div>
+    <div class="projects-grid reveal">
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-num">01 · Ongoing</span>
+          <div class="proj-links">
+            <a href="https://github.com/Pavandew/MyPG" class="proj-link" target="_blank">GitHub →</a>
+          </div>
+        </div>
+        <div class="proj-date">Jan 2026 — Present</div>
+        <div class="proj-title">MyPG App</div>
+        <div class="proj-subtitle">PG &amp; Room Discovery Platform</div>
+        <p class="proj-desc">Full-featured PG and room discovery platform with real-time Firebase backend, smart multi-filter search, and role-based access for owners and seekers.</p>
+        <ul class="proj-bullets">
+          <li>100+ listings with multi-filter system improving discovery by 40%</li>
+          <li>Real-time sync using Firebase Firestore + role-based Auth</li>
+          <li>Responsive UI with Material Design &amp; RecyclerView</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Kotlin</span><span class="tag">Firebase</span>
+          <span class="tag">MVVM</span><span class="tag">Firestore</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-num">02</span>
+          <div class="proj-links">
+            <a href="https://github.com/Pavandew/AI-Student" class="proj-link" target="_blank">GitHub →</a>
+          </div>
+        </div>
+        <div class="proj-date">Sep 2025 — Dec 2025</div>
+        <div class="proj-title">AI Chatbot App</div>
+        <div class="proj-subtitle">AI-Powered Conversational Assistant</div>
+        <p class="proj-desc">AI-powered chatbot delivering real-time conversational responses via API, built with Jetpack Compose and scalable MVVM architecture.</p>
+        <ul class="proj-bullets">
+          <li>Under 1s response latency via Retrofit API integration</li>
+          <li>MVVM + Coroutines reducing UI lag by 30%</li>
+          <li>Fully declarative UI with Jetpack Compose</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Kotlin</span><span class="tag">Compose</span>
+          <span class="tag">Coroutines</span><span class="tag">Retrofit</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-num">03</span>
+          <div class="proj-links">
+            <a href="#" class="proj-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="proj-date">Personal Project</div>
+        <div class="proj-title">Movie Explorer</div>
+        <div class="proj-subtitle">Movie Discovery — TMDB API</div>
+        <p class="proj-desc">Browse and discover trending movies using the TMDB API with real-time search, ratings, and detailed info screens.</p>
+        <ul class="proj-bullets">
+          <li>Live data fetching via Retrofit + TMDB API</li>
+          <li>MVVM with clean separation of UI and data layers</li>
+          <li>Fast image loading with Coil + infinite scroll pagination</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Kotlin</span><span class="tag">Compose</span>
+          <span class="tag">TMDB API</span><span class="tag">Coil</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-num">04</span>
+          <div class="proj-links">
+            <a href="#" class="proj-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="proj-date">Personal Project</div>
+        <div class="proj-title">Music Player</div>
+        <div class="proj-subtitle">Streaming App — Deezer API + Room DB</div>
+        <p class="proj-desc">Music streaming app integrating the Deezer API with offline support via Room DB and full playback controls.</p>
+        <ul class="proj-bullets">
+          <li>Deezer API for tracks, albums, and artist data</li>
+          <li>Offline support with Room Database for saved playlists</li>
+          <li>Background playback with smooth media controls</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Kotlin</span><span class="tag">Deezer API</span>
+          <span class="tag">Room DB</span><span class="tag">Coroutines</span>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://github.com/Pavandew" class="btn btn-outline" target="_blank">View All Projects on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ════ -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Get In Touch</div>
+      <h2 class="sec-title">Let's Connect</h2>
+      <p class="sec-sub">Available for freelance work and full-time opportunities</p>
+    </div>
+    <div class="contact-wrap reveal">
+
+      <div class="contact-info">
+        <h3>Let's work together</h3>
+        <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi — feel free to reach out!</p>
+        <div class="contact-items">
+          <div class="citem">
+            <div class="citem-icon">✉️</div>
+            <div>
+              <div class="citem-label">Email</div>
+              <div class="citem-val">pavandewangan4@gmail.com</div>
+            </div>
+          </div>
+          <div class="citem">
+            <div class="citem-icon">📍</div>
+            <div>
+              <div class="citem-label">Location</div>
+              <div class="citem-val">Bengaluru, Karnataka, India</div>
+            </div>
+          </div>
+          <div class="citem">
+            <div class="citem-icon">📞</div>
+            <div>
+              <div class="citem-label">Phone</div>
+              <div class="citem-val">+91 6265612181</div>
+            </div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/Pavandew" class="social-btn" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/pavandewangan" class="social-btn" target="_blank">LinkedIn</a>
+          <a href="resume.pdf" class="social-btn" download="PavanDewangan_Resume.pdf">Resume ↓</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="fname" placeholder="Your name"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="femail" placeholder="your@email.com"/>
+          </div>
+        </div>
+        <div class="form-group-full">
+          <label>Subject</label>
+          <input type="text" id="fsubject" placeholder="What's this about?"/>
+        </div>
+        <div class="form-group-full">
+          <label>Message</label>
+          <textarea id="fmessage" placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button class="form-submit" onclick="sendMessage()">Send Message →</button>
+        <div class="form-success" id="formSuccess">
+          ✅ Message sent! I'll get back to you soon.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:12px">
+          <div class="logo-icon">PD</div>
+          Pavan Dewangan
+        </div>
+        <p>Android Developer passionate about building innovative mobile solutions using Kotlin, Java, and Jetpack Compose.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:pavandewangan4@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/pavandewangan" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Pavandew" target="_blank">GitHub</a></li>
+          <li><a href="resume.pdf" download="PavanDewangan_Resume.pdf">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pavan Dewangan · All rights reserved</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
