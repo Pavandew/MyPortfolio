@@ -113,14 +113,27 @@ nav{
 /* ═══════════════════════════════
    HERO
 ═══════════════════════════════ */
-#home{
-  min-height:100vh;
-  display:flex;align-items:center;
-  padding-top:var(--nav-h);
-  position:relative;
-  overflow:hidden;
+/* Hero photo card - The Container */
+.hero-photo-card {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden; /* THIS FIXES THE LEAKAGE: It clips anything outside the 24px radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* New: Specifically targeting the image inside the card */
+.hero-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures your AI photo fills the card perfectly without gaps */
+  display: block;
+}
 /* Background grid */
 #home::before{
   content:'';
